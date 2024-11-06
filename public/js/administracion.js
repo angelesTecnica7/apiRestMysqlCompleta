@@ -44,7 +44,7 @@ const cerrarFormulario = (formularioNro) => {
 }
 
 // mostrar productos
-const endpoint = 'http://localhost:3000/productos' // a donde voy a solicitar los datos
+const endpoint = '/productos' // a donde voy a solicitar los datos
 // const endpoint = './json/datos.json' // a donde voy a solicitar los datos
 const contenedor = document.querySelector('#cont-prod') // quien necesita los datos
 let productos = '' // los datos finales que le voy a entregar al contenedor
