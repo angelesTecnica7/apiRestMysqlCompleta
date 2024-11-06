@@ -3,9 +3,10 @@ const db = require('./db/conexion');
 
 const fs = require('fs')
 const cors = require('cors')
+const dotend = require('dotenv/config')
 
 const app = express();
-const port = 3000
+const port = process.env.PORT || 3000
 
 //middleware para interpretar el json que envia la petición post
 app.use(express.json({ type: "*/*" }))
@@ -13,6 +14,11 @@ app.use(cors())
 app.use(express.static('./public')) //carpeta que contiene el front
 
 
+app.get("/admin", (req, res) => {
+    // console.log(__dirname)
+    res.sendFile(__dirname + '/public/administracion.html')
+
+})
 
 app.get("/productos", (req, res) => {
     // const datos = leerDatos()
@@ -37,11 +43,7 @@ app.get("/productos/:id", (req, res) => {
     // res.json(prodBuscado)
 })
 
-app.get("/admin", (req, res) => {
-    // console.log(__dirname)
-    res.sendFile(__dirname + '/public/administracion.html')
 
-})
 
 app.post("/productos", (req, res) => {
     // console.log(req.body)
