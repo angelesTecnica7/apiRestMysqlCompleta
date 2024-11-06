@@ -1,0 +1,28 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nbr": "kiwis",
+            "descripcion": "KIWIS ENORMES",
+            "precio": "1254"
+        },
+        {
+            "id": 2,
+            "nbr": "frutillas",
+            "descripcion": "hermosas frutillas",
+            "precio": "3500"
+        },
+        {
+            "id": 3,
+            "nbr": "manzanas",
+            "descripcion": "verdes grandes y acidas",
+            "precio": "2500"
+        },
+        {
+            "id": "4",
+            "nbr": "arandanos",
+            "descripcion": "Frutos de exportación",
+            "precio": "5674"
+        }
+    ]
+}
